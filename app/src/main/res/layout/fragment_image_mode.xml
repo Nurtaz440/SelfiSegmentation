@@ -3,12 +3,99 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.ImageModeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+      <com.google.android.material.chip.Chip
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="end"
+          app:chipIcon="@drawable/baseline_check_24"
+          android:checkable="true"
+          android:text="Forground Mode"
+          android:layout_marginEnd="16dp"
+          />
+      <androidx.appcompat.widget.AppCompatImageView
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="0.6"
+          android:scaleType="fitCenter"
+          android:src="@drawable/baseline_account_box_24"
+          />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="0.4">
+
+          <androidx.appcompat.widget.AppCompatButton
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="16dp"
+              style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+              android:textAllCaps="false"
+              android:text="Segment Selfi"
+              />
+
+
+      </LinearLayout>
+
+  </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="start|bottom"
+        android:layout_margin="16dp">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_camera_24"
+            android:layout_margin="10dp"
+            android:id="@+id/btnCamera"
+            app:fabSize="normal"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_add_photo"
+            android:layout_margin="10dp"
+            android:id="@+id/btnAdd"
+            app:fabSize="normal"
+            />
+    </LinearLayout> <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_cloud_sync_24"
+            android:visibility="invisible"
+            android:layout_margin="10dp"
+            android:id="@+id/btnBAck"
+            app:fabSize="normal"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_arrow_downward_24"
+            android:layout_margin="10dp"
+            android:id="@+id/btnDownload"
+            app:fabSize="normal"
+            />
+    </LinearLayout>
+
 
 </FrameLayout>
