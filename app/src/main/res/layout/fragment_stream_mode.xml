@@ -13,7 +13,7 @@
         android:backgroundTint="@color/white"
         app:scaleType="fitCenter" />
 
-    <androidx.drawerlayout.widget.DrawerLayout
+    <com.nurtaz.dev.selfisegmentation.utils.DrawOverlay
         android:id="@+id/drawOverlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
